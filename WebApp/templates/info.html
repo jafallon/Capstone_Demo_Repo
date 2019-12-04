@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block content %}
+<div style="text-align:center; padding-top: 70px;">
+    <h1>Info</h1>
+
+    <div class="Description">
+
+    </div>
+    <h2>
+      <p style="font-size:20px">
+        Nums2Money is a project aimed at helping the user have a better understanding of the stock exchange market and the factors that affect the rise and fall of stock prices.
+
+We are using information from Twitter to help give advice on whether it is advisable to invest in a company’s stock or not.
+
+It will show the percentage of positive, neutral, and negative tweets about the company and present the user with the information in a visualization.
+
+This is not intended to be a stock market predictor and the decision of the user to invest in stocks should not be based solely on the recommendations from this project.
+
+
+      </p>
+    </h2>
+
+      <img src="static/images/Graph.png"alt="Graph" align="left" height="400" title="This is the a graph where 0 means Negative, 2 neutral and 4 means positive">
+      <p align="left">To the left is the a graph where 0 means Negative, 2 neutral and 4 means positive </p>
+
+
+      <img src="static/images/ConfusionMatrix.png"alt="ConfusionMatrix" align="top-right" height="400" title="This is the Confusion Matrix showing the accuracy of the predictions">
+      <p align="right">Above is the Confusion Matrix showing the accuracy of the predictions</p>
+
+
+</div>
+
+<p>James Fallon, Ryan Pratt, Jacob Zahn, Chase Meyer, Michael Odeh</p>
+
+{% endblock %}

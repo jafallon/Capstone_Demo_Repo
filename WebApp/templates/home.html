@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block content %}
+<div style="text-align:center; padding-top: 70px;">
+  <h2><img src="static/images/logo.png"></h2>
+  <p>
+
+  Click <a href="info.html">Info Page</a> to view info page.
+
+  </p>
+  <p>
+  <h3>Nums2money helps to give advice on company stocks based on tweets about the company</h3>
+  </p>
+  <form action="{{ url_for('home') }}" method="post">
+    Please Choose Company:
+    <select name="this">
+      <option value="none" selected disabled hidden>Select</option>
+      <option value="facebook-feed">Facebook(Feed)</option>
+      <option value="facebook-all">Facebook(All)</option>
+      <option value="apple-feed">Apple(Feed)</option>
+      <option value="apple-all">Apple(All)</option>
+      <option value="amazon-feed">Amazon(Feed)</option>
+      <option value="amazon-all">Amazon(All)</option>
+      <option value="netflix-feed">Netflix(Feed)</option>
+      <option value="netflix-all">Netflix(All)</option>
+      <option value="google-feed">Google(Feed)</option>
+      <option value="google-all">Google(Alll)</option>
+    </select>
+    <input type="Submit" value="Submit">
+
+  </form>
+
+  <h1>{{ company }}</h1>
+</div>
+{% endblock %}
